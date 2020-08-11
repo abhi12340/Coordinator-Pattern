@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Coordinators" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="pCx-N6-lie">
+                                <rect key="frame" x="132" y="388.5" width="150" height="129"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="037-XJ-xfK">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <state key="normal" title="buy"/>
+                                        <connections>
+                                            <action selector="buy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GnN-hO-teZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSK-OI-54o">
+                                        <rect key="frame" x="0.0" y="70" width="150" height="59"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                        <state key="normal" title="create"/>
+                                        <connections>
+                                            <action selector="create:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AJJ-Pi-tQF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pCx-N6-lie" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="2Ka-g1-300"/>
+                            <constraint firstItem="pCx-N6-lie" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="k0n-wn-Doh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="-11.383928571428571"/>
+        </scene>
+        <!--Buy View Controller-->
+        <scene sceneID="ec9-Y1-toz">
+            <objects>
+                <viewController storyboardIdentifier="BuyViewController" id="vjT-71-eY1" customClass="BuyViewController" customModule="Coordinators" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1nj-lW-XwL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Buy Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqb-9P-hNQ">
+                                <rect key="frame" x="100" y="428" width="214" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Jqb-9P-hNQ" firstAttribute="centerX" secondItem="Jfq-hG-hJl" secondAttribute="centerX" id="Jv8-bJ-XnQ"/>
+                            <constraint firstItem="Jqb-9P-hNQ" firstAttribute="centerY" secondItem="Jfq-hG-hJl" secondAttribute="centerY" constant="-4.5" id="LpC-LP-Vi7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jfq-hG-hJl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TvM-Y7-2g4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="-11"/>
+        </scene>
+        <!--Create View Controller-->
+        <scene sceneID="2Vd-l7-tAL">
+            <objects>
+                <viewController storyboardIdentifier="CreateViewController" id="J37-Yd-Sow" customClass="CreateViewController" customModule="Coordinators" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v4K-rc-wYU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="74" translatesAutoresizingMaskIntoConstraints="NO" id="1Wn-fY-kbT">
+                                <rect key="frame" x="84" y="368.5" width="246" height="169.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ON-7s-8MW">
+                                        <rect key="frame" x="0.0" y="0.0" width="246" height="44.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ak0-FD-Ksl">
+                                        <rect key="frame" x="77" y="118.5" width="92" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="Added"/>
+                                        <connections>
+                                            <action selector="added:" destination="J37-Yd-Sow" eventType="touchUpInside" id="DUW-tb-KGc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1Wn-fY-kbT" firstAttribute="centerY" secondItem="qUm-mT-LWr" secondAttribute="centerY" id="KRx-3d-Xkm"/>
+                            <constraint firstItem="1Wn-fY-kbT" firstAttribute="centerX" secondItem="qUm-mT-LWr" secondAttribute="centerX" id="P6t-vp-fH9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qUm-mT-LWr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aNw-TM-3Wz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1418.840579710145" y="-11.383928571428571"/>
+        </scene>
+        <!--Added New View Controller-->
+        <scene sceneID="Wai-5a-2Wb">
+            <objects>
+                <viewController storyboardIdentifier="AddedNewViewController" id="hys-xp-WFU" customClass="AddedNewViewController" customModule="Coordinators" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SG7-nE-BYy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Controller " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olc-sj-cSN">
+                                <rect key="frame" x="98" y="433.5" width="218" height="39.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="olc-sj-cSN" firstAttribute="centerY" secondItem="gAK-CN-9Mp" secondAttribute="centerY" id="5xI-7l-0Kk"/>
+                            <constraint firstItem="olc-sj-cSN" firstAttribute="centerX" secondItem="gAK-CN-9Mp" secondAttribute="centerX" id="mfQ-BH-y1E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gAK-CN-9Mp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2F8-xC-PnC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2073.913043478261" y="-11.383928571428571"/>
+        </scene>
+    </scenes>
+</document>
